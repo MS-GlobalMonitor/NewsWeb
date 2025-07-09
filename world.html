@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World - MS GlobalMonitor</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold category-card" href="#">
+        <img src="img3.jpeg" alt="MS Global Monitor Logo" height="40">
+      </a>
+      <!-- Navigation links & search -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+        <!-- India Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="indiaDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            India
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="indiaDropdown">
+            <li><a class="dropdown-item" href="India-MU.html">Morning Updates</a></li>
+            <li><a class="dropdown-item" href="#">Politics</a></li>
+          </ul>
+        </li>
+
+        <!-- World Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            World
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="worldDropdown">
+            
+            <!-- FFrontlines submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="frontlinesToggle">
+                Frontlines
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="frontlinesToggle">
+                <li><a class="dropdown-item" href="#">Conflict Zones</a></li>
+                <li><a class="dropdown-item" href="flashPoint-1.html">Flash Point</a></li>
+              </ul>
+            </li>
+            
+            <li><a class="dropdown-item" href="globalSouth.html">Global South</a></li>
+
+            <!-- Geo‑Economics submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="geoEconToggle">
+                Geo Economics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="geoEconToggle">
+                <li><a class="dropdown-item" href="#">Sanctions</a></li>
+                <li><a class="dropdown-item" href="#">Trade War</a></li>
+              </ul>
+            </li>
+
+            <!-- Diplomatic Games submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="dipGamesToggle">
+                Diplomatic Games
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dipGamesToggle">
+                <li><a class="dropdown-item" href="#">Summits</a></li>
+                <li><a class="dropdown-item" href="#">Alliances</a></li>
+                <li><a class="dropdown-item" href="#">Speeches</a></li>
+              </ul>
+            </li>
+
+            <!-- Deep State Brief submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="deepStateToggle">
+                Deep State Brief
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="deepStateToggle">
+                <li><a class="dropdown-item" href="#">Military Strategy</a></li>
+                <li><a class="dropdown-item" href="#">Intelligence</a></li>
+                <li><a class="dropdown-item" href="#">Cyber Warfare</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us-footer">About Us</a></li>
+      </ul>
+
+      <!-- Search and Language -->
+      <form class="d-flex align-items-center gap-2" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">EN</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- World Section Articles -->
+  <section class="container py-5">
+    <h2 class="mb-4">World News</h2>
+
+    <!-- Global South Article -->
+    <a href="globalSouth.html" class="text-decoration-none text-dark">
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="GlobalSouth 1.jpeg" style="height: 150px; width: 400px; object-fit: cover;" class="img-fluid mb-3" alt="Global South">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">The Siliguri Corridor: India’s Strategic Lifeline and an Emerging Geopolitical Hotspot</h5>
+              <p class="card-text">A deep dive into the Siliguri corridor's geopolitical importance amid rising regional tensions and economic ambitions.</p>
+              <span class="badge bg-success">Global South</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Example Sub-category: Flash Point -->
+    <a href="flashPoint-1.html" class="text-decoration-none text-dark">
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="flashPoint1.png" style="height: 150px; width: 400px; object-fit: cover;" class="img-fluid mb-3" alt="Flash Point">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Flash Point: Taiwan Strait Escalation</h5>
+              <p class="card-text">Rising military activity raises fears of new conflict in the Asia-Pacific.</p>
+              <span class="badge bg-danger">Flash Point</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Add more sections: Conflict Zones, Trade War, Summits, etc. -->
+
+  </section>
+
+  <!-- Footer Start -->
+  <footer id="about-us-footer" class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>MSGlobalMonitor</h5>
+          <p>(Monitor of States)</p>
+          <p>"Think beyond Headlines"</p>
+        </div>
+        <div class="col-md-3">
+          <h6>News Categories</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">India</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Legal</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center pt-4">
+        <small>&copy; 2025 MS GlobalMonitor. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

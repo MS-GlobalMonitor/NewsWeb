@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MS GlobalMonitor</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold category-card" href="#">
+        <img src="img3.jpeg" alt="MS Global Monitor Logo" height="40">
+      </a>
+      <!-- Navigation links & search -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+        <!-- India Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="indiaDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            India
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="indiaDropdown">
+            <li><a class="dropdown-item" href="India-MU.html">Morning Updates</a></li>
+            <li><a class="dropdown-item" href="#">Politics</a></li>
+          </ul>
+        </li>
+
+        <!-- World Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            World
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="worldDropdown">
+            
+            <!-- FFrontlines submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="frontlinesToggle">
+                Frontlines
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="frontlinesToggle">
+                <li><a class="dropdown-item" href="#">Conflict Zones</a></li>
+                <li><a class="dropdown-item" href="flashPoint-1.html">Flash Point</a></li>
+              </ul>
+            </li>
+            
+            <li><a class="dropdown-item" href="globalSouth.html">Global South</a></li>
+
+            <!-- Geo‑Economics submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="geoEconToggle">
+                Geo Economics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="geoEconToggle">
+                <li><a class="dropdown-item" href="#">Sanctions</a></li>
+                <li><a class="dropdown-item" href="#">Trade War</a></li>
+              </ul>
+            </li>
+
+            <!-- Diplomatic Games submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="dipGamesToggle">
+                Diplomatic Games
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dipGamesToggle">
+                <li><a class="dropdown-item" href="#">Summits</a></li>
+                <li><a class="dropdown-item" href="#">Alliances</a></li>
+                <li><a class="dropdown-item" href="#">Speeches</a></li>
+              </ul>
+            </li>
+
+            <!-- Deep State Brief submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="deepStateToggle">
+                Deep State Brief
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="deepStateToggle">
+                <li><a class="dropdown-item" href="#">Military Strategy</a></li>
+                <li><a class="dropdown-item" href="#">Intelligence</a></li>
+                <li><a class="dropdown-item" href="#">Cyber Warfare</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us-footer">About Us</a></li>
+      </ul>
+
+      <!-- Search and Language -->
+      <form class="d-flex align-items-center gap-2" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">EN</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Breaking News -->
+  <div class="bg-danger text-white py-2 marquee">
+    <span><strong class="badge bg-white text-danger me-2"><b>Breaking News:</b></strong><b>“Journalism Without Sides.
+        Just Substance.”</b></span>
+  </div>
+
+  <!-- Carousel (4 images) -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-white"
+        style="background: url('img3.jpeg') no-repeat center center/cover; height: 400px;">
+        <div class="carousel-caption text-start">
+          <span class="badge bg-primary">World</span>
+          <h1>Climate Change: New Solutions Emerge</h1>
+          <p>Innovative approaches are being explored to reduce global temperatures effectively.</p>
+          <a href="#" class="btn btn-dark">Read Full Story</a>
+        </div>
+      </div>
+      <div class="carousel-item text-white"
+        style="background: url('GlobalSouth\ 1.jpeg') no-repeat center center/cover; height: 400px;">
+        <div class="carousel-caption text-start">
+          <span class="badge bg-success">Global South</span>
+          <h1>The Siliguri Corridor: India’s Strategic Lifeline and an Emerging Geopolitical Hotspot</h1>
+          <a href="globalSouth.html" class="btn btn-dark">Read Full Story</a>
+        </div>
+      </div>
+      <div class="carousel-item text-white"
+        style="background: url('https://via.placeholder.com/1200x500/780000/ffffff?text=Slide+3') no-repeat center center/cover; height: 400px;">
+        <div class="carousel-caption text-start">
+          <span class="badge bg-warning text-dark">Sports</span>
+          <h1>Historic Win at National Championships</h1>
+          <p>Fans celebrate a memorable season victory.</p>
+          <a href="#" class="btn btn-dark">See Highlights</a>
+        </div>
+      </div>
+      <div class="carousel-item text-white"
+        style="background: url('https://via.placeholder.com/1200x500/264653/ffffff?text=Slide+4') no-repeat center center/cover; height: 400px;">
+        <div class="carousel-caption text-start">
+          <span class="badge bg-info text-dark">Politics</span>
+          <h1>Government Unveils New Budget</h1>
+          <p>Major reforms in education and health sectors announced.</p>
+          <a href="#" class="btn btn-dark">Read More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Categories -->
+  <section class="py-5 text-center">
+  <h2>Explore News Categories</h2>
+  <p>Stay informed with comprehensive coverage across all major news categories</p>
+  <div class="container">
+    <div class="row g-3 justify-content-center">
+
+      <!-- India Card -->
+      <div class="col-md-2 col-sm-4 category-card">
+        <a href="India-MU.html" class="text-decoration-none text-dark">
+          <div class="card p-3 text-center">
+            <img src="india-map.svg" alt="India Icon" class="svg-icon mb-2 mx-auto d-block">
+            <div>India</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- World Card -->
+      <div class="col-md-2 col-sm-4 category-card">
+        <a href="world.html" class="text-decoration-none text-dark">
+          <div class="card p-3 text-center">
+            <i class="bi bi-globe-americas fs-3"></i>
+            <div>World</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tech Card -->
+      <div class="col-md-2 col-sm-4 category-card">
+        <a href="tech.html" class="text-decoration-none text-dark">
+          <div class="card p-3 text-center">
+            <i class="bi bi-laptop fs-3"></i>
+            <div>Tech</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Sports Card -->
+      <div class="col-md-2 col-sm-4 category-card">
+        <a href="sports.html" class="text-decoration-none text-dark">
+          <div class="card p-3 text-center">
+            <i class="bi bi-trophy fs-3"></i>
+            <div>Sports</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Latest News -->
+  <section class="container mb-5">
+    <h2 class="mb-4">Latest News</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card news-card mb-4">
+          <img src="https://via.placeholder.com/800x200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge bg-primary">Politics</span>
+            <h5 class="card-title mt-2">Economic Policy Changes Set to Transform Markets</h5>
+            <p class="card-text">New regulations announced by financial authorities are expected to have far-reaching
+              implications...</p>
+            <small class="text-muted">By Sarah Johnson • 2 hours ago • 4 min read</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-4">
+          <h5>Trending Now</h5>
+          <p>1. Legislative Session Produces Landmark Bills</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="bg-light py-5">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="mb-3">
+        <h2>Stay Informed</h2>
+        <i><b>
+            <p>"Journalism without sides - Just Substance!"</p>
+          </b> </i>
+        <input type="email" placeholder="Enter your email" class="form-control w-50 d-inline-block">
+        <button class="btn btn-dark ms-2">Subscribe</button>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="about-us-footer" class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>MSGlobalMonitor</h5>
+          <p>(Monitor of States)</p>
+          <p>"Think beyond Headlines"</p>
+        </div>
+        <div class="col-md-3">
+          <h6>News Categories</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">India</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Legal</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center pt-4">
+        <small>&copy; 2025 MS GlobalMonitor. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
