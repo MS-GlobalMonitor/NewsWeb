@@ -214,42 +214,79 @@
 </section>
 
   <!-- Latest News -->
-  <section class="container mb-5">
-    <h2 class="mb-4">Latest News</h2>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="card news-card mb-4">
-          <img src="https://via.placeholder.com/800x200" class="card-img-top" alt="...">
-          <div class="card-body">
-            <span class="badge bg-primary">Politics</span>
-            <h5 class="card-title mt-2">Economic Policy Changes Set to Transform Markets</h5>
-            <p class="card-text">New regulations announced by financial authorities are expected to have far-reaching
-              implications...</p>
-            <small class="text-muted">By Sarah Johnson • 2 hours ago • 4 min read</small>
+ <section class="container mb-5">
+  <h2 class="mb-4">Latest News</h2>
+  <div class="row">
+    
+    <!-- Left Column: Carousel -->
+    <div class="col-md-8">
+      <div id="newsCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="flashPoint1.png" class="d-block w-100" alt="FlashPoint">
+            <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-3 rounded">
+              <span class="badge bg-success">World</span>
+              <a href="flashPoint-1.html" class="text-decoration-none text-white">
+              <h5 class="mt-2">The proposed F-35 sale enables Trump to gain trade benefits while serving as a defensive strategy for Modi as Pakistan aligns with China</h5>
+              <p>President Donald Trump disclosed on Thursday that the United States would supply F-35 stealth fighter jets to India thus bestowing upon the country membership among select nations with cutting-edge stealth aircraft.</p>
+              <small class="text-light">By Manish Kumar • 2 hours ago • 4 min read</small>
+            </a>
+            </div>
           </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="India-1.jpg" class="d-block w-100" alt="Morning Updates">
+            <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-3 rounded">
+              <span class="badge bg-primary">India</span>
+              <a href="India-MU.html" class="text-decoration-none text-white">
+              <h5 class="mt-2">Government Helps Speed Up ₹36,296 Crore Projects in Gujarat and Rajasthan</h5>
+              <p>The Indian government resolves delays in ₹36,296 crore worth of projects in Gujarat and Rajasthan, including solar power infrastructure and 5G expansion, to boost growth and connectivity.</p>
+              <small class="text-light">By Mohd Ibad • 8 hours ago • 3 min read</small>
+            </a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="GlobalSouth 1.jpeg" class="d-block w-100" alt="Global South">
+            <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-3 rounded">
+              <span class="badge bg-danger">World</span>
+              <a href="globalSouth.html" class="text-decoration-none text-white">
+              <h5 class="mt-2">The Siliguri Corridor: India’s Strategic Lifeline and an Emerging Geopolitical Hotspot</h5>
+              <p>The Siliguri Corridor, with the nickname Chicken Neck, is in the northeastern corner of
+                    India, and it is only 20 to 25 kilometers wide at its narrowest point. Although this region
+                    is not so big, it has been one of the most strategic regions for India. It became a
+                    principal geopolitical hotspot in the South Asia region.</p>
+              <small class="text-light">By Manish Kumar • 15 hours ago • 5 min read</small>
+            </a>
+            </div>
+          </div>
+ 
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="mb-4">
-          <h5>Trending Now</h5>
-          <p>1. Legislative Session Produces Landmark Bills</p>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
       </div>
     </div>
-  </section>
 
-  <!-- Subscribe -->
-  <section class="bg-light py-5">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
-      <div class="mb-3">
-        <h2>Stay Informed</h2>
-        <i><b>
-            <p>"Journalism without sides - Just Substance!"</p>
-          </b> </i>
-        <input type="email" placeholder="Enter your email" class="form-control w-50 d-inline-block">
-        <button class="btn btn-dark ms-2">Subscribe</button>
+    <!-- Right Column: Trending Now -->
+    <div class="col-md-4">
+      <div class="mb-4">
+        <h5>Trending Now</h5>
+        <p><a href="flashPoint-1.html">1. The proposed F-35 sale enables Trump to gain trade benefits while serving as a defensive strategy for Modi as Pakistan aligns with China</a></p>
+        <p><a href="India-MU.html">2. Government Helps Speed Up ₹36,296 Crore Projects in Gujarat and Rajasthan</a></p>
+        <p><a href="globalSouth.html">3. The Siliguri Corridor: India’s Strategic Lifeline and an Emerging Geopolitical Hotspot</a></p>
       </div>
-  </section>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer id="about-us-footer" class="footer py-5">

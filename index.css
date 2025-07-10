@@ -76,3 +76,13 @@
  p img{
     width: 700px;
  }
+
+  .carousel-caption a {
+    cursor: pointer;
+  }
+
+  #newsCarousel img {
+    height: 400px; /* Set your desired height */
+    object-fit: cover;
+    width: 100%;
+  }
