@@ -86,3 +86,10 @@
     object-fit: cover;
     width: 100%;
   }
+
+  .table-custom tbody tr:nth-child(even) {
+      background-color: #e6f2ff; /* Light blue for alternating rows */
+    }
+    .table-custom tbody tr:nth-child(odd) {
+      background-color: white;
+    }
